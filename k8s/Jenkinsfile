@@ -1,0 +1,21 @@
+@Library('devops-library') _
+
+kaniko_yaml {
+    aws_region = "ap-northeast-2"
+    language = "python"
+    project = "devops"
+    namespace = "devops"
+    cluster = "topzone-k8s"
+    domain = "argear.io"
+    service_url = "GIT_BRANCH-tool.NAMESPACE.CLUSTER.DOMAIN"
+    env = "true"
+    pre_script = "true"
+    containers = [
+      [name:"tz-devops-admin", args: ["SONARQUBE=false"]]
+    ]
+}
+
+
+
+
+
