@@ -179,7 +179,7 @@
             <div class="col-sm-4"><h3>Service Monitoring</h3></div>
             <div class="col-sm-8">
               <label class="col-sm-12 form-group">
-                <h4><a href="https://kibana.elk.topzone-k8s.argear.io/app/dashboards#/view/c8b62730-7a05-11ee-bce1-9fbc05d24d84?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-12h,to:now))&_a=(description:'',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),query:(language:kuery,query:''),tags:!(),timeRestore:!f,title:'Service%20Access%20Stats',viewMode:edit)" target="_blank">접근통제</a></h4>
+                <h4><a href="https://kibana.elk.topzone-k8s.argear.io/app/dashboards#/view/c8b62730-7a05-11ee-bce1-9fbc05d24d84?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-12h,to:now))&_a=(description:'',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),query:(language:kuery,query:''),tags:!(),timeRestore:!f,title:'Service%20Access%20Stats',viewMode:edit)" target="_blank">Access Control</a></h4>
               </label><h5 class="text-center"></h5>
             </div>
           </div>

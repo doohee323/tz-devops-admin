@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-5">VPC 자원 검색</h1>
+      <h1 class="display-5">VPC Resource Search</h1>
     </div>
     <div class="container">
       <div class="row col-lg-12 form-group form-inline">
