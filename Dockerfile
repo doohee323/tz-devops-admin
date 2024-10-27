@@ -37,16 +37,6 @@ RUN sudo npm install -g @vue/cli \
     && npm i \
     && npm install bootstrap bootstrap-vue
 
-RUN curl -sL https://sentry.io/get-cli/ | bash
-
-ENV SENTRY_DSN=sentry_dsn
-ENV SENTRY_AUTH_TOKEN=sentry_auth_token
-ENV SENTRY_ORG=argear
-ENV SENTRY_PROJECT=tz-devops-admin
-ENV SENTRY_LOG_LEVEL=sentry_log_level
-ENV SENTRY_ENVIRONMENT=sentry_environment
-ENV SENTRY_RELEASE=sentry_release
-
 RUN npm run build
 
 EXPOSE 8000

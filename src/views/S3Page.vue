@@ -8,7 +8,7 @@
         <div class="col-lg-4 form-group">
           <label for="s3repo" class="col-lg-5 col-form-label">S3 Repo</label>
           <select class="browser-default custom-select" id="s3repo">
-            <option value="unity-repo.argear.io" selected>unity-repo.argear.io</option>
+            <option value="unity-repo.topzone.me" selected>unity-repo.topzone.me</option>
           </select>
         </div>
       </div>

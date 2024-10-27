@@ -6,7 +6,7 @@ kaniko_yaml {
     project = "devops"
     namespace = "devops"
     cluster = "topzone-k8s"
-    domain = "argear.io"
+    domain = "topzone.me"
     service_url = "GIT_BRANCH-tool.NAMESPACE.CLUSTER.DOMAIN"
     env = "true"
     pre_script = "true"

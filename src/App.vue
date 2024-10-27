@@ -6,11 +6,11 @@
       </h5>
       <nav class="my-2 my-md-0 mr-md-3">
 <!--        <router-link class="p-2 text-dark" to="/s3">S3 Repo</router-link>-->
-<!--          <a href="https://repo.devops.argear.io/" target="_blank">S3 Repo</a>-->
+<!--          <a href="https://repo.devops.topzone.me/" target="_blank">S3 Repo</a>-->
       </nav>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <router-link class="p-2 text-dark" to="/ri">RI calculator</router-link>
-      </nav>
+<!--      <nav class="my-2 my-md-0 mr-md-3">-->
+<!--        <router-link class="p-2 text-dark" to="/ri">RI calculator</router-link>-->
+<!--      </nav>-->
       <nav class="my-2 my-md-0 mr-md-3">
         <router-link class="p-2 text-dark" to="/cicd">CI/CD</router-link>
       </nav>

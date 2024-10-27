@@ -20,7 +20,6 @@ auth_users = {
     env.get('user'): env.get('password'),
     env.get('dev'): env.get('dev_password'),
 }
-exporter_otlp_traces_endpoint = env.get('exporter_otlp_traces_endpoint')
 
 APP_VERSION = '0.2'
 # logger config
@@ -30,7 +29,7 @@ logging.basicConfig(level=logging.INFO,
 
 
 class AuthHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
-    controller = Controller({'exporter_otlp_traces_endpoint': exporter_otlp_traces_endpoint})
+    controller = Controller()
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -43,12 +42,11 @@ class AuthHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         # and self.server.server_address[0] != '0.0.0.0'
-        username = None
-        if self.path != '/health':
-            username = self.authenticate()
-            if username is None:
-                return
-            self.username = username
+        # if self.path != '/health':
+        #     username = self.authenticate()
+        #     if username is None:
+        #         return
+        #     self.username = username
         self.controller.do_GET(self)
 
     def do_POST(self):
@@ -98,4 +96,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     server = http.server.HTTPServer((args.listen, args.port), AuthHTTPRequestHandler)
+    print('server running on port {0}'.format(args.port))
     server.serve_forever()

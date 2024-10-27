@@ -17,6 +17,7 @@ open http://localhost:8080/
 
 ## Project setup
 ```
+pip3 install -r requirements.txt
 npm install
 ```
 

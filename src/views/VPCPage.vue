@@ -8,7 +8,7 @@
         <div class="col-lg-4 form-group">
           <label for="profile" class="col-lg-5 col-form-label">AWS Profile</label>
           <select class="browser-default custom-select" id="profile">
-            <option value="tz-xxxxxxxxxxxx" selected>tz-xxxxxxxxxxxx</option>
+            <option value="tz-84828581538" selected>tz-84828581538</option>
             <option value="tz-yyyyyyyyyyyy">tz-yyyyyyyyyyyy</option>
           </select>
         </div>
@@ -55,6 +55,7 @@ export default {
     $('.loading').hide();
     let _this = this;
     _this.ajaxRegion(function () {
+        _this.ajaxRequest2();
     });
     $('#profile').change(function () {
       _this.ajaxRegion();
@@ -84,6 +85,8 @@ export default {
       });
     },
     ajaxRequest2() {
+        // eslint-disable-next-line no-debugger
+        debugger;
       $('.loading').show();
       let url = this.$parent.url + 'awsvpc?profile=' + $('#profile').val() + '&region=' + $('#region').val() + '&vpc=' + $('#vpc').val();
       $.ajax(url, {

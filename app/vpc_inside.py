@@ -34,7 +34,7 @@ class VPC:
         vpcs = []
         try:
             for t in list(self.ec2.vpcs.filter(Filters=[])):
-                vpcs.append({'name': '' if t.tags is None else t.tags[0]['Value'], 'id': t.id})
+                vpcs.append({'name': t.id if t.tags is None else t.tags[0]['Value'], 'id': t.id})
         except ClientError as e:
             logger.warning(e.response['Error']['Message'])
         return dumps(vpcs)
